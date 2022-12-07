@@ -62,6 +62,15 @@ istio-upgrade -g -A
 
 To upgrade given gateways
 istio-upgrade -g --gateway ingress-foo --gateway egress-bar
+
+To upgrade all data-plane
+istio-upgrade -d 
+
+To upgrade all data-planes under the specified namespace
+istio-upgrade -d --namespaces foo,bar
+
+To upgrade all data-planes under the specified namespace,name 
+istio-upgrade -d --namespaces foo --names bar
 `
 )
 
